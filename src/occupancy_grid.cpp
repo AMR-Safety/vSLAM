@@ -1,4 +1,7 @@
 #include "occupancy_grid.h"
+#include <opencv2/imgproc.hpp> // for dilate, Scalar
+#include <opencv2/core.hpp>    // for cv::Mat
+
 using namespace cv;
 
 OccupancyGrid::OccupancyGrid(GridMeta meta_) : meta(meta_) {
